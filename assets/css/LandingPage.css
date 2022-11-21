@@ -1,0 +1,224 @@
+body {
+    margin: 0px
+}
+
+.header_container {
+    display: grid;
+    position: fixed;
+    width: 100%;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr repeat(5, 5fr) 1fr;
+}
+
+.page_container {
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    grid-template-columns: 120px repeat(3, 5fr) 120px;
+}
+
+.urgency_banner {
+    grid-column: 1/8;
+    grid-row: 1;
+    text-align: center;
+    font-size: 16px;
+    height: auto;
+    width: auto;
+    color: white;
+    background-color: black;
+}
+
+.timer_text {
+    height: auto;
+    color: goldenrod
+}
+
+
+.title_banner {
+    grid-column: 1/8;
+    grid-row: 2;
+    height: auto;
+    width: auto;
+    background-color: rgb(21, 63, 105);
+}
+
+.header_message_container {
+    grid-column: 4;
+    grid-row: 2;
+    font-size: 20px;
+    text-align: right;
+    padding: 10px;
+    color: white;
+}
+
+.header_button_container {
+    grid-column: 5;
+    grid-row: 2;
+    text-align: left;
+    padding: 10px;
+}
+
+.header_logo_container {
+    grid-column: 3;
+    grid-row: 2;
+    text-align: center;
+    padding: 10px;
+}
+
+.bump_header {
+    grid-column: 1/5;
+    grid-row: 1;
+    height: 120px;
+    text-align: center;
+    padding: 10px;
+}
+
+.main_content_left_img {
+    grid-column: 2/4;
+    grid-row: 2;
+    text-align: left;
+    height: auto;
+    width: auto;
+    margin-left: 30px;
+}
+
+.main_content_left_txt {
+    grid-column: 2/4;
+    grid-row: 2;
+    text-align: left;
+    height: auto;
+    min-height: 685px;
+    width: auto;
+    min-width: 722px;
+    margin-left: 30px;
+}
+
+.main_content_header {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 60px;
+    color: rgb(21, 63, 105);
+}
+
+.main_content_sub_header {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 48px;
+    color: rgb(110, 191, 67);
+}
+
+.main_content_bullets {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 32px;
+}
+
+.main_content_right {
+    grid-column: 4/6;
+    grid-row: 2;
+    height: 100%;
+    max-height: 700px;
+    width: 100%;
+    max-width: 478px;
+    min-width: 400px;
+    margin-left: 20px;
+    background-color: white;
+}
+
+.message_content_background {
+    grid-column: 1/6;
+    grid-row: 3;
+    height: auto;
+    background-image: linear-gradient(rgb(223, 168, 17), rgb(226, 169, 12), rgb(240, 133, 12), rgb(255, 140, 0));
+}
+
+.message_content_left {
+    grid-column: 1/2;
+    grid-row: 3;
+    height: 100%;
+    text-align: left;
+    background-color: transparent;
+}
+
+
+.message_content_right {
+    grid-column: 3/5;
+    padding-right: 10px;
+    grid-row: 3;
+    text-align: center;
+    background-color: transparent;
+    font-size: 22px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+
+
+.message_header_txt {
+    color: rgb(21, 63, 105);
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.background_image {
+    grid-column: 1/5;
+    grid-row: 1;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.90), rgba(255, 255, 255, 0.575)), url(../images/weight_loss_large.png);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: right;
+}
+
+
+.link {
+    text-decoration: underline;
+}
+
+.button_container {
+    text-align: center;
+    grid-column: 1/5;
+    grid-row: 4;
+}
+
+.green_button {
+    color: white;
+    background-image: linear-gradient(rgb(157, 203, 46), rgb(126, 195, 60), rgb(110, 191, 67), rgb(98, 188, 72));
+    align-items: center;
+    font-size: 32px;
+    font-weight: bold;
+    height: auto;
+    min-height: 60px;
+    width: auto;
+    border-radius: 15px;
+    border-width: 2px;
+    border-color: transparent;
+}
+
+.green_button:hover {
+    border-color: greenyellow;
+}
+
+.green_button:active {
+    transform: scale(0.98);
+}
+
+.blue_button {
+    align-items: center;
+    font-size: 32px;
+    font-weight: bold;
+    height: 60px;
+    width: 360px;
+    color: white;
+    border-radius: 30px;
+    border-color: rgb(51, 102, 153);
+    background-color: rgb(51, 102, 153);
+}
+
+.blue_button:hover {
+    font-weight: 900;
+    background-color: #1cd633;
+    border-color: rgb(21, 63, 105);
+
+}
+
+.blue_button:active {
+    transform: scale(0.98);
+}
