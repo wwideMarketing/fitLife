@@ -6,6 +6,7 @@ function buttonClick() {
 
 document.addEventListener('DOMContentLoaded', () => {
     console.log('DOMContentLoaded')
+    document.getElementById("main_content_left_txt").style.maxHeight = 80%
     displayToday()
     timer()
 })
